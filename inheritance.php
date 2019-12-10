@@ -1,5 +1,9 @@
 <?php 
 
+/**
+ * PHP Inheritance testing
+ */
+
 function br(){
     echo "<br>";
 }
@@ -28,7 +32,6 @@ class ShopProduct{
 
 
 // Lets use Inheritance
-
 
 class ShopProductCD extends ShopProduct{
     
