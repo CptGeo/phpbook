@@ -42,9 +42,7 @@ class ShopProductWriter{
     }
 }
 
-class Wrong{ 
-    //uncomment line 33 and line 39 to see the problem
-}
+class Wrong{}
 
 $product = new ShopProduct('Tomato', 'Papadakis', 'Ioannis', 0.95);
 
