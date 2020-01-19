@@ -74,21 +74,32 @@ $inst = Preferences::getInstance();
 
 
 $setup = array(
-    'language' => 'english',
+    'languages' => array(
+        'en' => 'english',
+        'el' => 'greek',
+        'de' => 'german'
+    ),
     'host' => 'localhost',
-    'phpversion' => '7.3.1'
+    'phpversion' => '7.3.1',
+
 );
 
 $inst->setProperties($setup);
 
+$prop = array(
+        'color' => 'dark',
+        'typography' => 'Roboto Slab'
+);
+$inst->setOneProperty('theme', $prop );
+
 echo "<pre>";
-print_r($inst->getProperty(['language','host','phpversion']));
+print_r($inst->getProperty(['languages','host','phpversion','theme']));
 echo "</pre>";
 
 
 $inst2 = Preferences::getInstance();
 echo "<pre>";
-print_r($inst2->getProperty(['language','host']));
+print_r($inst2->getProperty(['languages','host']));
 echo "</pre>";
 
 ?>
