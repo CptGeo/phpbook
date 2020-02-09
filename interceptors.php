@@ -12,6 +12,9 @@
  * 
  * 
  * __clone() invoked when cloning an object
+ * 
+ * __toString() invoked when object instance is passed as argument to echo or print functions
+ * (means what to do when -> echo $objectInstance)
  */
 
 class Pet{
