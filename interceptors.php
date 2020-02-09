@@ -9,6 +9,9 @@
  * __isset($property)
  * __unset($property)
  * __call($method, $arg_array)
+ * 
+ * 
+ * __clone() invoked when cloning an object
  */
 
 class Pet{
